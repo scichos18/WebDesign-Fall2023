@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+    <body>
+
+        <!-- Title and Headers -->
+        <h1>My Favorite Thing About School</h1>
+        <h2>One of my favorite things about Eastside Prep is the variety of interesting classes.</h2>
+
+        <!-- Paragraphs -->
+        <p> I love that Eastside Prep has so many cool classes you can take in all disciplines. </p>
+        <p> A lot of the classes are unique and advanced, especially for seniors. </p>
+        
+        <!-- Link and Image -->
+        Here's a link to the Eastside Prep course catalog:
+        <a href="http://courses.eastsideprep.org/">Eastside Prep Courses</a>
+        <br>
+        <br>
+        <img src="images/course_catalog.png" alt="this is supposed to be a picture of the course catalog" width="500">
+        <br>
+        <em>Image of online course catalog.</em> <!-- NEW HTML TAG (emphasize) -->
+        <br>
+        <br>
+
+        <!-- List -->
+        <b>These are the reasons I like Eastside Prep courses:</b> <!-- NEW HTML TAG (bold) -->
+        <ul>
+            <li>Interactive and engaging classes
+            <li>Many advanced courses
+            <li>Wide variety of social science and literature options
+            <li>Unique courses just for seniors
+        </ul>
+
+        <!-- Description List -->
+        <b>These are my favorite disciplines and classes:</b>
+        <d1>                                    <!-- NEW HTML TAGS (description list)-->
+            <dt>Social Science</dt>
+            <dd>- Modern Middle East</dd>
+            <dd>- US History</dd>
+            <dd>- Comparative Government</dd>
+            <dt>Literature</dt>
+            <dd>- European Literature</dd>
+            <dd>- American Literature</dd>
+            <dt>Other Electives</dt>
+            <dd>- Programming 1</dd>
+            <dd>- Physical Education</dd>
+            <dd>- Drawing and Painting 1</dd>
+        </d1>
+
+    </body>
+
+</html>
