@@ -1,0 +1,27 @@
+h2,h3 {
+    color: blue;
+}
+
+table {
+    list-style-type: none
+    margin 0;
+    padding: t;
+    overflow: hidden;
+}
+
+tr{
+    display: inline;
+    float: left;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+td{
+    display: block;
+    padding: 10px;
+    background-color: lightseagreen;
+    color: black;
+    font-size: 15px;
+}
