@@ -1,5 +1,36 @@
-h2,h3 {
-    color: blue;
+body {
+    background-color:lightcyan;
+}
+
+h1, h3 {
+    color: darkblue;
+    font-family: "Times New Roman" Times, serif;
+    text-align: center;
+}
+
+p {
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+p2 {
+    color:blue;
+    text-align:center;
+}
+
+em {
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 table {
@@ -7,9 +38,10 @@ table {
     margin 0;
     padding: t;
     overflow: hidden;
+    position: fixed
 }
 
-tr{
+tr {
     display: inline;
     float: left;
     border-right: 1px solid black;
@@ -18,10 +50,14 @@ tr{
     border-top: 1px solid black;
 }
 
-td{
+td {
     display: block;
     padding: 10px;
-    background-color: lightseagreen;
+    background-color: plum;
     color: black;
     font-size: 15px;
+}
+
+td a:hover {
+    background-color: mediumorchid;
 }
