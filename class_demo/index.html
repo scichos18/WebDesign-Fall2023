@@ -11,36 +11,46 @@
         <meta name="author" content="scichos">
         <meta name="keywords" content="demo, learning, practice, webdesign">
 
+        <!-- CSS -->
+            <!-- most general = style.css external document -->
+            <!-- specific to page = internal style (in head) using <style> -->
+            <!-- specific to line = inline style (in tag) using style= -->
+
     </head>
 
-    <body>
+    <body style="background-color: yellow;">
 
         <!-- Heading -->
         <h1>Class Demo</h1>
 
         <!-- Layout of Page -->
-        <table>
+        <!-- margins only work in table, padding works in individual cells -->
+        <table style="margin-right: 15px;">
             <!-- tr=row, td=column, th=header (alternative to td)-->
-            <tr>
+            <tr style="background-color:cyan">
                 <th>text things</th>
                 <th>non-text things</th>        
             </tr>
             <tr>
-                <td><p>
-                    <!-- Paragraph -->
-                    <!-- <strong> = bold, <i> = itallicized -->
-                    <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
-                    has been the industry's <i>standard dummy text ever since the 1500s</i>.
-                </p></td>
-                <td>
+                <!-- style in td applies to whole cell, style in p tag applies to specific line-->
+                <td style="font-size: larger;">
+                    <p style="color:purple">
+                        <strong>Lorem Ipsum</strong> is simply dummy text of the <i>printing and typesetting industry</i>
+                    </p>
+                    <p>
+                        More elaborate text...
+                    </p>
+                </td>
+                    <!-- using padding to add space between table edge and image-->
+                <td style="padding-left:15px; padding-right: 15px; padding-top: 40px;">
                     <!-- Image -->
                     <!-- right click on picture, use "copy relative path"-->
                     <!-- alt is good for picture not loading, searching, reading website out -->
-                    <img src="..\class_stream\images\marx.jpg" width="200" alt="picture of karl marx">
+                    <img src="..\class_stream\images\marx.jpg" width="300" alt="picture of karl marx">
                 </td>
             </tr>
             <tr>
-                <td>
+                <td style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
                     <!-- List of Links -->
                     <ol>
                         <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools HTML Reference</a></li>
@@ -50,7 +60,7 @@
                 </td>
                 <td>
                     <!-- Embedding a Map -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.100476668455!2d-122.20157312439481!3d47.64361428542188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906cc534674737%3A0xf92154cd626a9efb!2sEastside%20Preparatory%20School!5e0!3m2!1sen!2sus!4v1696267743054!5m2!1sen!2sus" width="200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.100476668455!2d-122.20157312439481!3d47.64361428542188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906cc534674737%3A0xf92154cd626a9efb!2sEastside%20Preparatory%20School!5e0!3m2!1sen!2sus!4v1696267743054!5m2!1sen!2sus" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
                 </td>
             </tr>
         </table>
