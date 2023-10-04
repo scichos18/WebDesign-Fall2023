@@ -16,12 +16,24 @@
             <!-- specific to page = internal style (in head) using <style> -->
             <!-- specific to line = inline style (in tag) using style= -->
 
+        <!-- Class = .something, can use multiple times --> 
+        <!-- ID = #something, can only use ONCE (used for exceptions to style)-->
+        
+        <!-- linking to style sheet - best to seperate style from structure -->
+        <link rel="stylesheet" href=style.css>
+        <style>
+        </style>
+
     </head>
 
-    <body style="background-color: yellow;">
+    <body style="background-color: #dbc8ff;">
 
         <!-- Heading -->
-        <h1>Class Demo</h1>
+        <!-- DIV -->
+        <div style="background-color: white;">
+            <h1>Class <i>Demo</i></h1>
+            <h3>subheading</h3>
+        </div>
 
         <!-- Layout of Page -->
         <!-- margins only work in table, padding works in individual cells -->
@@ -40,6 +52,10 @@
                     <p>
                         More elaborate text...
                     </p>
+                    <!-- SPAN -->
+                    <p>
+                        Lorem ipsum dolor sit amet, <span style="background-color: pink;"> adipiscing elit. Morbi metus risus, maximus nec felis at, ullamcorper imperdiet</span>. 
+                    </p>
                 </td>
                     <!-- using padding to add space between table edge and image-->
                 <td style="padding-left:15px; padding-right: 15px; padding-top: 40px;">
@@ -48,14 +64,19 @@
                     <!-- alt is good for picture not loading, searching, reading website out -->
                     <img src="..\class_stream\images\marx.jpg" width="300" alt="picture of karl marx">
                 </td>
+                <td style="background-color: green;">
+                    Extra Column
+                </td>
             </tr>
             <tr>
-                <td style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <!-- ID -->
+                <td id="funny-text">
                     <!-- List of Links -->
+                    <!-- CLASS -->
                     <ol>
-                        <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools HTML Reference</a></li>
-                        <li><a href="https://www.google.com/" target="_blank">Google Search</a></li>
-                        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+                        <li class="link"><a href="https://www.w3schools.com/" target="_blank">W3 Schools HTML Reference</a></li>
+                        <li class="link"><a href="https://www.google.com/" target="_blank">Google Search</a></li>
+                        <li class="link"><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
                     </ol>
                 </td>
                 <td>

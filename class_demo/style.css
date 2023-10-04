@@ -1,0 +1,16 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;            
+}
+
+p {
+    text-align: center;
+}
+
+.link {
+    font-size: smaller;
+}
+
+#funny-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
