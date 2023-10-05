@@ -29,13 +29,13 @@ p {
 
 .navbar-td {       
     display: block;
-    width: 198px;
+    width: 168px;
     padding: 5px;
     text-align: center;
     background-color: #b691ff;
     font-family: "new-zen", sans-serif;
     font-weight: 300;
-    font-style: italic;
+    font-size: smaller;
     color: #36117e;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
