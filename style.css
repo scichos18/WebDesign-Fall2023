@@ -16,10 +16,12 @@ p {
     font-style: normal;
     color: #6918b4;
     font-size: larger;
+    text-align: center;
 }
 
 .navbar-table {
     position: fixed;
+    overflow: hidden;
 }
 
 .navbar-tr {
@@ -44,9 +46,16 @@ p {
     border-collapse: collapse;
 }
 
-.navbar-td a:hover{
-    background-color:#6918b4;
+.navbar-td a:hover {
     color: #ffffff;
+}
+
+.navbar-table tr:hover td {
+    background-color:#6918b4;
+}
+
+.navbar-a {
+    text-decoration: none;
 }
 
 .caption {
