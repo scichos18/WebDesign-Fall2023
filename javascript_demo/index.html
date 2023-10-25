@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>JavaScript Demo</title>
+
+    </head>
+
+
+    <body>
+        
+        <h1>JavaScript Demo</h1>
+
+        <h2>How to do onlclick events</h2>
+        <!-- click somewhere on the screen and have something happen -->
+        <a href="https://eastsideprep.org" target="_blank"
+            onclick="alert('Warning! You are navigating away from this page!')">school website</a>
+
+        <hr>
+        <h2>Display a secret message on button click</h2>
+        <p id="secret"></p> <!-- use id because they are unique, only in one place in code -->
+        <button
+            onclick="document.getElementById('secret').innerHTML='secret message';
+            getElementById('secret').style.display='block'">Reveal!</button>
+        <button
+            onclick="getElementById('secret').style.display='none'">Hide!</button>
+
+
+        <hr>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="age">Age:</label><br>
+            <input type="text" id="age" name="age"><br>
+        </form>
+
+        <hr>
+        <h2>Two Truths and a Lie</h2>
+        <form>
+            <input type="radio" id="statement1" name="2truths&1lie" value="truth">
+            <label for="statement1">I can juggle.</label><br>
+            <input type="radio" id="statement2" name="2truths&1lie" value="lie">
+            <label for="statement2">I can juggle.</label><br>
+            <input type="radio" id="statement3" name="2truths&1lie" value="truth">
+            <label for="statement3">I can juggle.</label><br>
+            <button>Submit</button>
+        </form>
+
+    </body>
+
+</html>
