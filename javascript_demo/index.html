@@ -21,9 +21,10 @@
         <hr>
         <h2>Display a secret message on button click</h2>
         <p id="secret"></p> <!-- use id because they are unique, only in one place in code -->
-        <button
+        <button onclick="reveal()">Reveal!</button>
+        <!-- <button
             onclick="document.getElementById('secret').innerHTML='secret message';
-            getElementById('secret').style.display='block'">Reveal!</button>
+            getElementById('secret').style.display='block'">Reveal!</button> -->
         <button
             onclick="getElementById('secret').style.display='none'">Hide!</button>
 
@@ -31,11 +32,9 @@
         <hr>
         <form>
             <label for="fname">First Name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="age">Age:</label><br>
-            <input type="text" id="age" name="age"><br>
+            <!-- <input type="text" id="fname" name="myNname" value="first name here"> -->
+            <input type="text" id="fname">
+            <input type="submit" value="Submit" onclick="hello()">
         </form>
 
         <hr>
@@ -46,9 +45,46 @@
             <input type="radio" id="statement2" name="2truths&1lie" value="lie">
             <label for="statement2">I can juggle.</label><br>
             <input type="radio" id="statement3" name="2truths&1lie" value="truth">
-            <label for="statement3">I can juggle.</label><br>
-            <button>Submit</button>
+            <label for="statement3">I can juggle.</label><br><br>
+            <button type="submit" onclick="checkTruth()">Submit</button>
         </form>
+        <p id="answer"></p>
+
+        <script>
+
+            function reveal() {
+                document.getElementById('secret').innerHTML='secret message';
+                getElementById('secret').style.display='block'
+            }
+
+            function hello() {
+                let name = document.getElementById('fname').value;
+                alert("Hello, " + name + "!");
+            }
+
+            function checkTruth() {
+                
+                let answerTag = document.getElementById('answer')
+
+                if( document.getElementById('statement1').checked ){
+                    answerTag.innerHTML = 'truth';
+                    answerTag.style.color = "green";
+                    answerTag.style.display = 'block';
+                }
+                if( document.getElementById('statement2').checked ){
+                    answerTag.innerHTML = 'lie';
+                    answerTag.style.color = "red";
+                    answerTag.style.display = 'block';
+                }
+                if( document.getElementById('statement3').checked ){
+                    answerTag.innerHTML = 'truth';
+                    answerTag.style.color = "green";
+                    answerTag.style.display = 'block';
+                    
+                }
+            }
+
+        </script>
 
     </body>
 
