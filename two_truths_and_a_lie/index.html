@@ -15,13 +15,18 @@
         <hr>
 
         <form>
+            <label for="favcolor">Select your favoite color:</label>
+            <input type="color" id="favcolor" name="favcolor"><br><br>
+            <button onclick="color()">Submit</button>
+        </form>
+        <hr>
+
+        <form>
             <label for="fname">First Name:</label><br>
             <input type="text" id="fname" name="fname"><br>
             <label for="lname">Last Name:</label><br>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="age">Age:</label><br>
-            <input type="text" id="age" name="age"><br><br>
-            <button>Submit</button>
+            <input type="text" id="lname" name="lname"><br><br>
+            <button onclick="hello()">Submit</button>
         </form>
         <hr>
 
@@ -37,8 +42,9 @@
             <input type="radio" id="statement4" name="2truths&1lie" value="lie">
             <label for="statement4">Rhubarb</label><br>
             <input type="radio" id="statement5" name="2truths&1lie" value="truth">
-            <label for="statement5">Watermelon</label><br><br>
-            <button>Submit</button>
+            <label for="statement5">Watermelon</label><br>
+            <p id="answer1"></p>
+            <button onclick="check1()">Submit</button>
         </form>
         <hr>
 
@@ -50,8 +56,9 @@
             <input type="radio" id="statement2" name="2truths&1lie" value="truth">
             <label for="statement2">I can juggle.</label><br>
             <input type="radio" id="statement3" name="2truths&1lie" value="truth">
-            <label for="statement3">I can ride a horse.</label><br><br>
-            <button>Submit</button>
+            <label for="statement3">I can ride a horse.</label><br>
+            <p id="answer2"></p>
+            <button onclick="check2()">Submit</button>
         </form>
         <hr>
 
@@ -63,9 +70,117 @@
             <input type="checkbox" id="statement2" name="2truths&1lie" value="truth">
             <label for="statement2">I have 18 first cousins.</label><br>
             <input type="checkbox" id="statement3" name="2truths&1lie" value="lie">
-            <label for="statement3">I was born in British Columbia, Canada.</label><br><br>
-            <button>Submit</button>
+            <label for="statement3">I was born in British Columbia, Canada.</label><br>
+            <p id="answer3"></p>
+            <button onclick="check3()">Submit</button>
         </form>
+
+        <script>
+
+            function color() {
+                let color = document.getElementById('favcolor').value;
+                document.body.style.background = color;
+            }
+
+            function hello() {
+                let firstname = document.getElementById('fname').value;
+                let lastname = document.getElementById('lname').value;
+                alert("Hello, " + firstname + " " + lastname + "! Welcome to two truths and a lie.");
+            }
+
+            function check1() {
+
+                let answer1 = document.getElementById('answer1')
+
+                if( document.getElementById('statement1').checked ) {
+                    answer1.innerHTML = 'Fruit';
+                    answer1.style.color = "red";
+                    answer1.style.display = 'block';
+                }
+                if( document.getElementById('statement2').checked ){
+                    answer1.innerHTML = 'Fruit';
+                    answer1.style.color = "red";
+                    answer1.style.display = 'block';
+                }
+                if( document.getElementById('statement3').checked ){
+                    answer1.innerHTML = 'Fruit';
+                    answer1.style.color = "red";
+                    answer1.style.display = 'block';
+                }
+                if( document.getElementById('statement4').checked ){
+                    answer1.innerHTML = 'Vegetable';
+                    answer1.style.color = "green";
+                    answer1.style.display = 'block';
+                }if( document.getElementById('statement5').checked ){
+                    answer1.innerHTML = 'Fruit';
+                    answer1.style.color = "red";
+                    answer1.style.display = 'block';
+                }
+            }
+
+            function check2() {
+
+                let answer2 = document.getElementById('answer2')
+
+                if( document.getElementById('statement1').checked ) {
+                    answer2.innerHTML = 'Lie';
+                    answer2.style.color = "green";
+                    answer2.style.display = 'block';
+                }
+                if( document.getElementById('statement2').checked ){
+                    answer2.innerHTML = 'Truth';
+                    answer2.style.color = "red";
+                    answer2.style.display = 'block';
+                }
+                if( document.getElementById('statement3').checked ){
+                    answer2.innerHTML = 'Truth';
+                    answer2.style.color = "red";
+                    answer2.style.display = 'block';
+                }
+            }
+
+            function check2() {
+
+                let answer2 = document.getElementById('answer2')
+
+                if( document.getElementById('statement1').checked ) {
+                    answer2.innerHTML = 'Lie';
+                    answer2.style.color = "green";
+                    answer2.style.display = 'block';
+                }
+                if( document.getElementById('statement2').checked ){
+                    answer2.innerHTML = 'Truth';
+                    answer2.style.color = "red";
+                    answer2.style.display = 'block';
+                }
+                if( document.getElementById('statement3').checked ){
+                    answer2.innerHTML = 'Truth';
+                    answer2.style.color = "red";
+                    answer2.style.display = 'block';
+                }
+            }
+
+            function check3() {
+
+                let answer3 = document.getElementById('answer3')
+
+                if ( document.getElementById('statement1.checked') && document.getElementById('statement2.checked'))
+                    answer3.innerHTML = 'Both Truth';
+                    answer3.style.color = "green";
+                    answer3.style.display = 'block';
+
+                if ( document.getElementById('statement1.checked') && document.getElementById('statement3.checked'))
+                    answer3.innerHTML = 'One Truth, One Lie';
+                    answer3.style.color = "red";
+                    answer3.style.display = 'block';
+
+                if ( document.getElementById('statement2.checked') && document.getElementById('statement3.checked'))
+                    answer3.innerHTML = 'One Truth, One Lie';
+                    answer3.style.color = "red";
+                    answer3.style.display = 'block';
+            }
+
+        </script>
 
     </body>
 
