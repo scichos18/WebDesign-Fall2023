@@ -27,27 +27,107 @@
 
             </div>
 
-            <div class="grid-item index-carousel">
-                Carousel
+            <!-- Image Carousel -->
+            <div class="index-carousel">
+                
+                <!-- images -->
+                <div class="index-slides fade">
+                    <div class="index-number">1 / 6</div>
+                    <img class="index-image" src="images/carousel1.webp">
+                </div>
+
+                <div class="index-slides fade">
+                    <div class="index-number">2 / 6</div>
+                    <img class="index-image" src="images/carousel2.webp">
+                </div>
+
+                <div class="index-slides fade">
+                    <div class="index-number">3 / 6</div>
+                    <img class="index-image" src="images/carousel3.webp">
+                </div>
+
+                <div class="index-slides fade">
+                    <div class="index-number">4 / 6</div>
+                    <img class="index-image" src="images/carousel4.webp">
+                </div>
+
+                <div class="index-slides fade">
+                    <div class="index-number">5 / 6</div>
+                    <img class="index-image" src="images/carousel5.webp">
+                </div>
+
+                <div class="index-slides fade">
+                    <div class="index-number">6 / 6</div>
+                    <img class="index-image" src="images/carousel6.webp">
+                </div>
+
+                <!-- next and previous buttons -->
+                <a class="index-previous" onclick="plusSlides(-1)">❮</a>
+                <a class="index-next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+            
+            <!-- dots -->
+            <div class="index-circles">
+                    <span class="index-dot" onclick="currentSlide(1)"></span> 
+                    <span class="index-dot" onclick="currentSlide(2)"></span> 
+                    <span class="index-dot" onclick="currentSlide(3)"></span>
+                    <span class="index-dot" onclick="currentSlide(4)"></span>
+                    <span class="index-dot" onclick="currentSlide(5)"></span> 
             </div>
 
             <div class="grid-item index-info">
-                Brief info
+                <p>Welcome to the biggest and best Appaloosa horse show of the summer in the Northwest!</p>
+                <p> Tall Timber Circuit is not just another horse show, but a family and community event!</p>
             </div>
 
-            <div class="grid-item index-logo">
-                Logo
+            <div class="index-logo">
+                <img src="images/logo2.webp">
             </div>
 
             <div class="grid-item index-dates">
-                Dates
+                <h3>Tall Timber Circuit</h3>
+                <p>June 1-2, 2024</p>
+                <p>Tacome Unit #1, Spanaway, Washington</p>
             </div>
 
-            <div class="grid-item index-footer">
-                Footer
+            <div class="index-footer">
+                <p>2023 Tall Timber Circuit</p>
             </div>
 
         </div>
+
+        <script>
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("index-slides");
+                let dots = document.getElementsByClassName("index-dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+
+        </script>
 
     </body>
 
