@@ -36,21 +36,26 @@ body {
     display: block;
     text-align: center;
     padding: 0 20px;
+    padding-bottom: 0;
     color: #005a00;
     font-family: gelica, sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 20px;
 }
 
 .navbar-item a {
     display: block;
     text-align: center;
     padding: 14px 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-decoration: none;
     color: #005a00;
     font-family: gelica, sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
 }
 
 .navbar-item a:hover {
@@ -80,7 +85,7 @@ body {
 .index-carousel {
     grid-column: 1 / span 5;
     grid-row: 1 / span 2;
-    max-width: 50%;
+    max-width: 55%;
     position: relative;
     margin: auto;
     padding: 10px;
@@ -94,7 +99,22 @@ body {
     width: 100%;
 }
 
-.index-previous, .index-next {
+.index-previous {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.index-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -162,7 +182,7 @@ body {
 }
 
 .index-info {
-    grid-column: 1 / span 2;
+    grid-column: 4 / span 2;
     grid-row: 4;
     font-family: gelica, sans-serif;
     font-weight: 400;
@@ -179,7 +199,7 @@ body {
 }
 
 .index-dates {
-    grid-column: 4 / span 2;
+    grid-column: 1 / span 2;
     grid-row: 4;
     border-radius: 50px;
 }
@@ -212,53 +232,60 @@ body {
     color:#005a00;
 }
 
+.index-logo-image {
+    width: 250px;
+    padding: 20px;
+    padding-top: 50px;
+}
+
 .about-dates {
     grid-column: 1 / span 3;
     grid-row: 2 / span 2;
     border-radius: 50px;
 }
 
-.about-links-list {
-    text-decoration: none;
-    list-style-type: none;
-}
-
 .about-links {
     grid-column: 4 / span 2;
     grid-row: 2 / span 7;
     border-radius: 50px;
+    align-content: center;
 }
 
 .about-image1 {
     grid-column: 1;
     grid-row: 4 / span 2;
-    width: 200px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 2px;
 }
 
 .about-image2 {
     grid-column: 2;
     grid-row: 4 / span 2;
+    padding: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 .about-image3 {
     grid-column: 3;
     grid-row: 4 / span 2;
+    padding: 10px;
+    padding-left: 2px;
+    padding-right: 20px;
 }
 
 .about-images {
-    width: 200px;
-    padding: 5px;
+    width: 225px;
+    padding: 5px
 }
 
 .about-judges {
     grid-column: 1 / span 3;
     grid-row: 6 / span 3;
     border-radius: 50px;
-}
-
-.about-judges-list {
-    text-decoration: none;
-    list-style-type: none;
+    text-align: center;
+    line-height: 0.75;
 }
 
 .about-info {
@@ -285,7 +312,7 @@ body {
     font-size: 25px;
 }
 
-.about-dates p, .about-info p, .about-links p, .about-judges p, .about-judges li, .about-info li {
+.about-dates p, .about-info p, .about-links p, .about-judges p, .about-judges li, .about-info li, .about-info a {
     font-family: gelica, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -314,6 +341,7 @@ body {
 .location-image {
     grid-column: 3 / span 2;
     grid-row: 2;
+    padding: 10px;
 }
 
 .location-map {
@@ -367,7 +395,7 @@ body {
 
 .location-images {
     width: 250px;
-    height: 250px;
+    height: 225px;
     padding: 5px;
     margin: 20px;
 }
@@ -381,6 +409,10 @@ body {
 .sponsors-image1 {
     grid-column: 1;
     grid-row: 3;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 
 .sponsors-link {
@@ -394,7 +426,6 @@ body {
     font-size: 20px;
     border-radius: 50px;
 }
-
 
 .sponsors-sponsor1 {
     grid-column: 2;
@@ -411,7 +442,7 @@ body {
     color:#005a00;
 }
 
-.sponsors-info p, .sponsors-sponsor1 p, .sponsors-sponsor2 p, .sponsors-sponsor3 p, .sponsors-sponsor1 li, .sponsors-sponsor2 li, .sponsors-sponsor3 li {
+.sponsors-info p, .sponsors-sponsor1 p, .sponsors-sponsor2 p, .sponsors-sponsor3 p, .sponsors-sponsor1 li, .sponsors-sponsor2 li, .sponsors-sponsor3 li, .sponsors-email {
     font-family: gelica, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -431,13 +462,13 @@ body {
 }
 
 .sponsors-images1 {
-    width: 475px;
+    height: 300px;
     padding: 5px;
     margin: 20px;
 }
 
 .sponsors-images2 {
-    width: 225px;
+    height: 300px;
     padding: 5px;
     margin: 20px;
 }
@@ -450,34 +481,39 @@ body {
 }
 
 .contact-contact1 {
-    grid-column: 1;
+    grid-column: 1 / span 3;
     grid-row: 2;
     border-radius: 50px;
 }
 
 .contact-contact2 {
-    grid-column: 2;
+    grid-column: 4 / span 3;
     grid-row: 2;
     border-radius: 50px;
 }
 
 .contact-info {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 6;
     grid-row: 4;
 }
 
 .contact-logo {
-    grid-column: 1;
+    grid-column: 3 / span 2;
     grid-row: 3;
 }
 
-.contact-image {
-    grid-column: 2;
+.contact-image1 {
+    grid-column: 1 / span 2;
     grid-row: 3;
 }
+
+.contact-image2 {
+    grid-column: 5 / span 2;
+    grid-row: 3;
+}   
 
 .contact-footer {
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 6;
     grid-row: 8;
     text-align: center;
     font-family: gelica, sans-serif;
@@ -495,7 +531,7 @@ body {
     font-size: 25px;
 }
 
-.contact-contact1 li, .contact-contact2 li, .contact-info p {
+.contact-contact1 li, .contact-contact2 li, .contact-info p, .contact-contact1 a, .contact-contact2 a, .contact-info a {
     font-family: gelica, sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -506,5 +542,12 @@ body {
 }
 
 .contact-images {
-    width: 500px;
+    width: 450px;
+    height: 300px;
+    padding: 5px;
+}
+
+.contact-logo-image {
+    height: 300px;
+    padding: 5px;
 }
