@@ -118,7 +118,7 @@ body {
     font-style: normal;
     padding: 8px 12px;
     position: absolute;
-    top: 0;
+    top: 5;
 }
 
 .index-circles {
@@ -208,6 +208,7 @@ body {
 .about-dates {
     grid-column: 1 / span 3;
     grid-row: 2 / span 2;
+    border-radius: 50px;
 }
 
 .about-links-list {
@@ -218,6 +219,7 @@ body {
 .about-links {
     grid-column: 4 / span 2;
     grid-row: 2 / span 7;
+    border-radius: 50px;
 }
 
 .about-image1 {
@@ -244,6 +246,7 @@ body {
 .about-judges {
     grid-column: 1 / span 3;
     grid-row: 6 / span 3;
+    border-radius: 50px;
 }
 
 .about-judges-list {
@@ -254,6 +257,16 @@ body {
 .about-info {
     grid-column: 1 / span 5;
     grid-row: 9 / span 4;
+}
+
+.about-footer {
+    grid-column: 1 / span 5;
+    grid-row: 13;
+    text-align: center;
+    font-family: gelica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#005a00;
 }
 
 .about-dates h3, .about-info h3, .about-links h3, .about-judges h3 {
@@ -285,9 +298,31 @@ body {
     font-size: 0px;
 }
 
-.about-footer {
-    grid-column: 1 / span 5;
-    grid-row: 13;
+.location-address {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    border-radius: 50px;
+}
+
+.location-image {
+    grid-column: 3 / span 2;
+    grid-row: 2;
+}
+
+.location-map {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 2;
+}
+
+.location-directions {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    border-radius: 50px;
+}
+
+.location-footer {
+    grid-column: 1 / span 4;
+    grid-row: 5;
     text-align: center;
     font-family: gelica, sans-serif;
     font-weight: 400;
@@ -295,97 +330,182 @@ body {
     color:#005a00;
 }
 
-.location-address {
-    grid-column: 1 / span 2;
-    grid-row: 2;
+.location-address h3, .location-directions h3 {
+    font-family: gelica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f2e480;
+    text-align: center;
+    font-size: 25px;
 }
 
-.location-directions {
-    grid-column: 3 / span 3;
-    grid-row: 2 / span 3;
+.location-address p, .location-directions p {
+    font-family: gelica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+    font-size: 20px;
 }
 
-.location-image {
-    grid-column: 1 / span 2;
-    grid-row: 3 / span 2;
+.location-directions li {
+    font-family: gelica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffffff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-.location-map {
-    grid-column: 1 / span 5;
-    grid-row: 5 / span 4;
-}
-
-.location-footer {
-    grid-column: 1 / span 5;
-    grid-row: 9;
+.location-images {
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+    margin: 20px;
 }
 
 .sponsors-info {
     grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
+    grid-row: 2;
 }
 
 .sponsors-image1 {
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 2;
+    grid-column: 2;
+    grid-row: 3;
 }
 
 .sponsors-image2 {
-    grid-column: 3 / span 2;
-    grid-row: 4 / span 2;
+    grid-column: 1;
+    grid-row: 4;
 }
 
 .sponsors-sponsor1 {
-    grid-column: 1 / span 2;
-    grid-row: 4 / span 4;
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 50px;
 }
 
 .sponsors-sponsor2 {
-    grid-column: 3 / span 2;
-    grid-row: 6 / span 4;
+    grid-column: 2;
+    grid-row: 4;
+    border-radius: 50px;
 }
 
 .sponsors-sponsor3 {
-    grid-column: 1 / span 2;
-    grid-row: 8 / span 4;
+    grid-column: 1;
+    grid-row: 5;
+    border-radius: 50px;
 }
 
 .sponsors-link {
-    grid-column: 3 / span 2;
-    grid-row: 10 / span 2;
+    grid-column: 2;
+    grid-row: 5;
+    font-family: gelica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+    font-size: 20px;
 }
 
 .sponsors-footer {
-    grid-column: 1 / span 4;
-    grid-row: 12;
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    text-align: center;
+    font-family: gelica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#005a00;
+}
+
+.sponsors-info p, .sponsors-sponsor1 p, .sponsors-sponsor2 p, .sponsors-sponsor3 p, .sponsors-sponsor1 li, .sponsors-sponsor2 li, .sponsors-sponsor3 li {
+    font-family: gelica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.sponsors-info h3, .sponsors-sponsor1 h3, .sponsors-sponsor2 h3, .sponsors-sponsor3 h3, .sponsors-link h3 {
+    font-family: gelica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f2e480;
+    text-align: center;
+    font-size: 25px;
+}
+
+.sponsors-images1 {
+    width: 500px;
+    padding: 5px;
+    margin: 20px;
+}
+
+.sponsors-images2 {
+    width: 200px;
+    padding: 5px;
+    margin: 20px;
 }
 
 .contact-contact1 {
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 3;
+    grid-column: 1;
+    grid-row: 2;
+    border-radius: 50px;
 }
 
 .contact-contact2 {
-    grid-column: 3 / span 2;
-    grid-row: 2 / span 3;
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 50px;
 }
 
 .contact-info {
-    grid-column: 1 / span 4;
-    grid-row: 5;
+    grid-column: 1 / span 2;
+    grid-row: 4;
 }
 
 .contact-logo {
-    grid-column: 1 / span 2;
-    grid-row: 6 / span 2;
+    grid-column: 1;
+    grid-row: 3;
 }
 
 .contact-image {
-    grid-column: 3 / span 2;
-    grid-row: 6 / span 2;
+    grid-column: 2;
+    grid-row: 3;
 }
 
 .contact-footer {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 2;
     grid-row: 8;
+    text-align: center;
+    font-family: gelica, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#005a00;
+}
+
+.contact-contact1 h3, .contact-contact2 h3 {
+    font-family: gelica, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #f2e480;
+    text-align: center;
+    font-size: 25px;
+}
+
+.contact-contact1 li, .contact-contact2 li, .contact-info p {
+    font-family: gelica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color:#ffffff;
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.contact-images {
+    width: 500px;
 }
