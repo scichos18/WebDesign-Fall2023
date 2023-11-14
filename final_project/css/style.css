@@ -80,7 +80,7 @@ body {
 .index-grid-container {
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 19% 19% 20% 19% 19%;
 }
 
 .index-carousel {
@@ -187,7 +187,7 @@ body {
     color:#ffffff;
     text-align: center;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .index-logo {
