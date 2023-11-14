@@ -412,7 +412,7 @@ body {
 .sponsors-grid-container {
     display: grid;
     gap: 10px;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 62% 35%;
 }
 
 .sponsors-info {
