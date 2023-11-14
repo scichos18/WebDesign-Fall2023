@@ -2,11 +2,6 @@ body {
     background-color: #bfffbf;
 }
 
-.grid-container {
-    display: grid;
-    gap: 10px;
-}
-
 .button {
     text-decoration: none;
     padding: 0.5rem;
@@ -71,7 +66,7 @@ body {
 .grid-item {
     background-color: #008000;
     align-content: center;
-    padding: 30px;
+    padding: 20px;
     color:#ffffff
 }
 
@@ -80,6 +75,12 @@ body {
     align-content: center;
     padding: 30px;
     color:#ffffff
+}
+
+.index-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 19% 19% 20% 19% 19%;
 }
 
 .index-carousel {
@@ -186,7 +187,7 @@ body {
     color:#ffffff;
     text-align: center;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .index-logo {
@@ -229,9 +230,15 @@ body {
 }
 
 .index-logo-image {
-    width: 250px;
+    width: 220px;
     padding: 20px;
     padding-top: 50px;
+}
+
+.about-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 25% 25% 25% 25;
 }
 
 .about-dates {
@@ -328,6 +335,12 @@ body {
     font-size: 0px;
 }
 
+.location-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 25% 25% 25% 25;
+}
+
 .location-address {
     grid-column: 1 / span 2;
     grid-row: 2;
@@ -391,9 +404,15 @@ body {
 
 .location-images {
     width: 250px;
-    height: 225px;
+    height: 200px;
     padding: 5px;
     margin: 20px;
+}
+
+.sponsors-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 60% 40%;
 }
 
 .sponsors-info {
@@ -476,6 +495,12 @@ body {
     font-size: 0px;
 }
 
+.contact-grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+}
+
 .contact-contact1 {
     grid-column: 1 / span 3;
     grid-row: 2;
@@ -496,16 +521,23 @@ body {
 .contact-logo {
     grid-column: 3 / span 2;
     grid-row: 3;
+    align-content: center;
+    padding-left: 70px;
+    padding-right: 50px;
 }
 
 .contact-image1 {
     grid-column: 1 / span 2;
     grid-row: 3;
+    align-content: center;
 }
 
 .contact-image2 {
     grid-column: 5 / span 2;
     grid-row: 3;
+    align-content: center;
+    padding-right: 40px;
+    padding-left: 0px;
 }   
 
 .contact-footer {
@@ -538,12 +570,12 @@ body {
 }
 
 .contact-images {
-    width: 450px;
-    height: 300px;
+    width: 400px;
+    height: 275px;
     padding: 5px;
 }
 
 .contact-logo-image {
-    height: 300px;
+    height: 275px;
     padding: 5px;
 }
